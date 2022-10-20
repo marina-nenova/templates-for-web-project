@@ -1,0 +1,65 @@
+.feed-navbar {
+    min-height: 56px;
+    z-index: 5;
+}
+.logo {
+    padding: 10px;
+    /* width: 60px;
+    height: 60px; */
+}
+
+.search-bar {
+    margin-left: 2px;
+}
+.search-bar {
+    min-height: 40px;
+    min-width: 230px;
+}
+.search-icon {
+    margin-right: 2px;
+}
+
+/* Nav buttons */
+
+.nav__btn button:hover {
+    background: #f0f2f5 !important;
+  }
+  .nav__btn button:hover i {
+    color: #212025 !important;
+  }
+  .nav__btn-active i {
+    color: #3a9b8b !important;
+  }
+  .nav__btn-active {
+    position: relative;
+  }
+  .nav__btn-active:before {
+    content: "";
+    position: absolute;
+    bottom: -4.5px;
+    left: 0;
+    transform: translate(0, 9.5px);
+    width: 100%;
+    height: 3px;
+    border-bottom: 3px solid #25907e !important;
+  }
+
+  .avatar {
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+  }
+
+  .username {
+    margin: none;
+  }
+
+  .nav-menu {
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+  }
+
+.dd-header {
+    color: #3a9b8b;
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/cc87dce3b6.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- bootstrap script -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- End -->
+
+    <!-- ========================  Nav Bar  ======================== -->
+
+    <div class="bg-white d-flex align-items-center fixed-top shadow feed-navbar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Search -->
+                <div class="col d-flex align-items-center">
+                    <!-- Logo -->
+                    <img class="logo" src="./styles/images/favicon.ico" alt="passport-logo">
+                    <!-- End Logo -->
+
+                    <!-- Search Bar -->
+                    <div class="input-group search-bar">
+                        <!-- Mobile -->
+
+
+                        <i class="fas fa-search fa-2x btn-group d-md-none d-block" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-expanded="false"></i>
+                        <div class="dropdown-menu">
+                            <form class="search-bar">
+                                <div class="mb-1">
+                                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                </div>
+                            </form>
+                        </div>
+
+
+                        <!-- End mobile -->
+
+                        <!-- Desktop -->
+                        <span class="input-group-prepend d-none d-md-block" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <form class="d-flex" role="search" class="search-bar">
+                                <input class="form-control me-2 rounded-pill" type="search" placeholder="Search"
+                                    aria-label="Search">
+                            </form>
+                        </span>
+
+                    </div>
+                    <!-- End Search Bar -->
+
+
+                </div>
+                <!-- Nav -->
+                <div class="col d-none d-md-flex justify-content-center">
+
+                    <!-- Home -->
+                    <div class="mx-4 nav__btn nav__btn-active">
+                        <button class="btn px-4">
+                            <i class="fa-solid fa-house-user fs-4"></i>
+                        </button>
+                    </div>
+                    <!-- My Passports -->
+                    <div class="mx-4 nav__btn">
+                        <button class="btn px-4">
+                            <i class="fa-solid fa-passport fs-4"></i>
+                        </button>
+                    </div>
+                    <!-- Want to visit -->
+                    <div class="mx-4 nav__btn">
+                        <button class="btn px-4">
+                            <i class="fa-solid fa-heart fs-4"></i>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- End nav -->
+
+                <!-- Menus -->
+                <div class="col d-flex align-items-center justify-content-end">
+                    <!-- Avatar -->
+                    <div class="d-none d-xl-flex align-items-center justify-content-center">
+                        <a href="#" class="text-decoration-none text-dark d-flex align-items-center justify-content-left"><img src="./styles/images/profile_photo.jpg" alt="avatar" class="avatar rounded-circle me-2">
+                            <p class="username m-0">Username</p></a>
+                    </div>
+                    <!-- Dopdown menu -->
+                    <div class="d-flex align-items-center justify-content-center p-1 mx-2 rounded-circle bg-grey nav-menu"
+                        type="button" id="mainMenu" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis fs-4"></i>
+                    </div>
+                    <!-- Main menu dropdown -->
+                    <ul class="dropdown-menu border-0 shadow p-3 overflow-auto" aria-labelledby="mainMenu"
+                        style="width: 23em; max-height: 600px">
+                        <div>
+                            <!-- Profile -->
+                            <li class="p-1 mx-2">
+                                <h2>Menu</h2>
+                            </li>
+                            <!-- Go to -->
+                            <h4 class="m-2 dd-header">Go to</h4>
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-house-user fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0"> Home</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-passport fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0">My Passports</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-heart fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0">Want to visit</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-star fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0">Top 10</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- End Go to -->
+
+                            <!-- Profile -->
+                            <h4 class="m-2 dd-header">Profile</h4>
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-user fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0"> View</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-pen-to-square fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0">Edit</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-right-from-bracket fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0">Logout</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- End Go-to -->
+
+                        </div>
+                    </ul>
+
+                </div>
+                <!-- End Menus -->
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
