@@ -1,6 +1,18 @@
-body {
-    font-family: sans-serif;
-}
+.bg-gray {
+    background-color: #f0f2f5;
+  }
+  .fs-0 {
+    font-size: 4rem;
+  }
+  .fs-7 {
+    font-size: 0.8rem;
+  }
+
+  /* scrollbar */
+.scrollbar:hover {
+    overflow: auto !important;
+  }
+
 
 .feed-navbar {
     min-height: 56px;
@@ -93,43 +105,13 @@ body {
 
 #top-ten-right{
     left: initial!important;
-    padding-top: 56px;
 }
 
-.list-group {
-    font-size:medium ;
+.badge {
+    background-color: #25907e;
 }
-
-#top-ten-left li h5 span {
-    color: #25907e;
-}
-
-#top-ten-left li a {
-    text-decoration: none;
-    color: gray;
-}
-
-#top-ten-left li a:hover {
-    text-decoration: none;
-    color:#25907e;
-}
-
-#top-ten-left li {
-    color: grey;
-}
-#top-ten-right li {
-    color: grey;
-}
-#top-ten-right li a {
-    text-decoration: none;
-    color: gray;
-}
-#top-ten-right li a:hover {
-    text-decoration: none;
-    color:#25907e;
-}
-#top-ten-right li h5 span {
-    color: #25907e;
+span {
+    color: white;
 }
 hr {
     margin: 1px;
@@ -138,6 +120,11 @@ hr {
 .fa-star {
     color: rgb(249, 224, 5);
 }
+
+.fa-flag {
+    color: rgb(196, 62, 62);
+}
+
 
 /* Feed */
 
