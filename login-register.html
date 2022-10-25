@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <!-- main style -->
+  <link rel="stylesheet" href="./main.css" />
+  <title>Flexbook</title>
+</head>
+
+<body class="bg-gray">
+  <!-- Login -->
+  <div class="container-lg">
+    <div class="row justify-content-center align-items-center">
+      <!-- Intro info -->
+      <div class="col-md-5 text-center text-md-start order-2 order-md-1 my-5">
+        <h1>
+          <div class="display-2">Explore BG</div>
+        </h1>
+        <p class="lead my-4 text-muted">Discover over 150 locations in Bulgaria and share it with the world</p>
+      </div>
+      <!-- Login form -->
+      <div class="col-md-5 text-center d-md-block order-1 order-md-2 my-5" style="max-width: 28rem; width: 100%">
+        <div class="card bg-white shadow rounded p-3">
+          <div class="card-body text-center text-md-start ">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">keep me logged in</label>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 my-3">Log In</button>
+              <div class="mb-3">
+                <p>Haven't signed up yet?</p>
+                <button type="submit" class="btn btn-success w-100">Register</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+      <!-- End login form -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
