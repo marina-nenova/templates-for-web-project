@@ -1,0 +1,20 @@
+body {
+    background: url("images/arda.jpg");
+    min-height: 100%;
+    min-width: 100%;
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#title-text {
+    font-family: 'DM Serif Display', sans-serif;
+    font-weight: 400;
+}
+
+#subtitle-text {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 500;
+}
