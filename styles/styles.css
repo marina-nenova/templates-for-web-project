@@ -8,12 +8,6 @@
     font-size: 0.8rem;
   }
 
-  /* scrollbar */
-.scrollbar:hover {
-    overflow: auto !important;
-  }
-
-
 .feed-navbar {
     min-height: 56px;
     z-index: 5;
@@ -29,9 +23,6 @@
     margin-left: 2px;
     min-height: 40px;
     min-width: 230px;
-}
-.search-input {
-    background-color: #dde0e4;
 }
 
 /* Nav buttons */
@@ -71,10 +62,6 @@
     object-fit: cover;
 }
 
-.username {
-    margin: none;
-}
-
 .nav-menu {
     width: 38px;
     height: 38px;
@@ -86,9 +73,17 @@
     color: #3a9b8b;
 }
 
-#mainMenu {
-    background-color: #dde0e4;
+.dd-menu a:hover {
+    background: #f0f2f5 !important;
+}
 
+.dd-menu a:hover p {
+    color: #3a9b8b !important;
+    
+}
+
+.dd-menu a:hover i {
+    color: #3a9b8b !important;
 }
 
 /* Sidebar */
@@ -158,4 +153,12 @@ hr {
 .post__comment .accordion-button:not(.collapsed) {
     background: transparent !important;
     box-shadow: none !important;
+}
+
+
+/* Profile page */
+
+.profile-photo {
+    width: 168px;
+    height: 168px;
 }

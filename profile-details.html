@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/cc87dce3b6.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Explore-BG</title>
+</head>
+
+<body class="bg-gray">
+    <!-- =============================== Nav Bar =============================== -->
+<section id="nav-bar">
+    <div class="bg-white d-flex align-items-center fixed-top shadow feed-navbar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Search -->
+                <div class="col d-flex align-items-center">
+                    <!-- Logo -->
+                    <a href="./feed.html">
+                        <img class="logo" src="./styles/images/favicon.ico" alt="logo">
+                    </a>
+                    <!-- End Logo -->
+
+                    <!-- Search Bar -->
+                    <div class="input-group search-bar">
+                        <span class="input-group-prepend d-md-block" data-bs-toggle="dropdown" aria-expanded="false">
+                            <form class="d-flex" role="search" class="search-bar">
+                                <input class="form-control me-2 rounded-pill search-input bg-gray border-0" type="search"
+                                    placeholder="Search" aria-label="Search">
+                            </form>
+                        </span>
+                    </div>
+                    <!-- End Search Bar -->
+
+
+                </div>
+                <!-- Nav -->
+                <div class="col d-none d-md-flex justify-content-center">
+
+                    <!-- Home -->
+                    <div class="mx-4 nav__btn nav__btn-active">
+                        <button class="btn px-4 nav_button">
+                            <i class="fa-solid fa-house-user fs-4 text-muted"></i>
+                        </button>
+                    </div>
+                    <!-- My Passports -->
+                    <div class="mx-4 nav__btn">
+                        <button class="btn px-4 nav_button">
+                            <i class="fa-solid fa-passport fs-4 text-muted"></i>
+                        </button>
+                    </div>
+                    <!-- Want to visit -->
+                    <div class="mx-4 nav__btn">
+                        <button class="btn px-4 nav_button">
+                            <i class="fa-solid fa-heart fs-4 text-muted"></i>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- End nav -->
+
+                <!-- Menus -->
+                <div class="col d-flex align-items-center justify-content-end">
+                    <!-- Avatar -->
+                    <div class="d-none d-xl-flex align-items-center justify-content-center">
+                        <a href="./profile-details.html"
+                            class="text-decoration-none text-dark d-flex align-items-center justify-content-left"><img
+                                src="./styles/images/profile_photo.jpg" alt="avatar" class="avatar rounded-circle me-2">
+                            <p class="username m-0">Username</p>
+                        </a>
+                    </div>
+                    <!-- Dopdown menu -->
+                    <div class="d-flex align-items-center justify-content-center p-1 mx-2 rounded-circle nav-menu bg-gray"
+                        type="button" id="mainMenu" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis fs-4"></i>
+                    </div>
+                    <!-- Main menu dropdown -->
+                    <ul class="dropdown-menu border-0 shadow p-3 overflow-auto dd-menu" aria-labelledby="mainMenu"
+                        style="width: 23em; max-height: 600px">
+                        <div>
+                            <!-- Profile -->
+                            <li class="p-1 mx-2">
+                                <h2>Menu</h2>
+                            </li>
+                            <hr>
+                            <!-- Go to -->
+                            <h4 class="m-2 dd-header">Go to</h4>
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-house-user fs-4 text-muted"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0 text-muted"> Home</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-passport fs-4 text-muted"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0 text-muted">My Passports</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-heart fs-4 text-muted"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0 text-muted">Want to visit</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-star fs-4 text-muted"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0 text-muted">Top 10</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- End Go to -->
+                            <hr>
+
+                            <!-- Profile -->
+                            <h4 class="m-2 dd-header">Profile</h4>
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-user fs-4 text-muted"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0 text-muted"> View</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-pen-to-square fs-4 text-muted"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0 text-muted">Edit</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-right-from-bracket fs-4 text-muted"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0 text-muted">Logout</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- End Profile -->
+
+                        </div>
+                    </ul>
+
+                </div>
+                <!-- End Menus -->
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+    <!-- =============================== End Nav Bar =============================== -->
+
+    <!-- =============================== Main Content =============================== -->
+<section id="user-posts">
+    <div class="container-fluid" style="margin-top: 70px;">
+        <div class="row justify-content-center align-items-center">
+            <!-- User Info Card -->
+            <div class="col-lg-8">
+                <div class="card mb-3 border-0 shadow">
+                    <div class="row">
+                        <div class="col-md-3 d-flex justify-content-center align-items-center">
+                            <img src="./styles/images/profile_photo.jpg" class="rounded-circle profile-photo"
+                                alt="profile-picture">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h1 class="card-title text-md-center">Marina Nenova</h1>
+                                    <!-- Edit profile button -->
+                                    <a href="">
+                                        <i class="fa-solid fa-pen-to-square fs-2 text-muted"></i>
+                                    </a>
+                                </div>
+
+                                <p class="card-text">
+                                    <i class="fa-solid fa-location-dot text-muted"></i>
+                                    15 Visited Locations
+                                </p>
+                                <button type="button" class="btn btn-outline-primary btn-lg">
+                                    Add location
+                                </button>
+                                <button type="button" class="btn btn-outline-primary btn-lg">
+                                    View Albums
+                                </button>
+
+                            </div>
+                            <hr calss="my-2">
+                        </div>
+
+
+                        <div class="col mt-2">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Posts</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Albums</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Visited Locations</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                        aria-expanded="false">Passports</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Museums</a></li>
+                                        <li><a class="dropdown-item" href="#">Nature</a></li>
+                                        <li><a class="dropdown-item" href="#">Historical</a></li>
+                                        <li><a class="dropdown-item" href="#">Churches</a></li>
+                                        <li><a class="dropdown-item" href="#">All Locations</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End User info -->
+
+            <!-- posts -->
+            <div class="col-lg-8">
+                <div class="card my-3 border-0 shadow">
+                    <div class="card-header bg-transparent">
+                        <div class="input-group search-bar">
+                            <span class="input-group justify-content-center">
+                                <form class="d-flex" role="search" class="search-bar">
+                                    <input class="form-control me-2 rounded-pill search-input bg-gray border-0" type="search"
+                                        placeholder="Search" aria-label="Search">
+                                </form>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <!-- Posts -->
+                        <!-- p1 -->
+                        <div class="bg-transparent p-4 mt-3">
+                            <!-- Author -->
+                            <div class="d-flex justify-content-between">
+                                <!-- avatar -->
+                                <div class="d-flex">
+                                    <img src="./styles/images/profile_photo.jpg" alt=""
+                                        class="avatar rounded-circle me-2">
+                                    <div>
+                                        <p class="m-0 fw-bold">Marina Nenova</p>
+                                        <span class="text-muted fs-7">July 17 at 1:23pm</span>
+                                    </div>
+                                </div>
+                                <!-- Edit -->
+                                <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" id="post1Menu"></i>
+                                <!-- edit menu -->
+                                <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1Menu">
+                                    <li class="d-flex align-items-center">
+                                        <a href=""
+                                            class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                            Edit Post
+                                        </a>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <a href=""
+                                            class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                            Delete Post
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- Post content -->
+                            <div class="mt-3">
+                                <!-- content -->
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae quasi
+                                        inventore? Voluptatem amet iste consequatur assumenda recusandae blanditiis
+                                        voluptatum unde, inventore voluptate minus! Aliquam?</p>
+                                    <img src="./styles/images/arda.jpg" alt="post-image" class="img-fluid">
+                                </div>
+                                <!-- likes and comments -->
+                                <div class="position-relative mt-3 post__comment">
+                                    <!-- likes -->
+                                    <div class="d-flex align-items-center position-absolute top-0 start-0"
+                                        style="height:50px; z-index:5">
+                                        <div class="me-2">
+                                            <i class="fas fa-thumbs-up fs-4 text-primary"></i>
+                                        </div>
+                                        <p class="m-0 text-muted fs-7">Ivalina, Ivan and 3 others</p>
+                                    </div>
+
+                                    <!-- Comments start -->
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item border-0">
+                                            <!-- comment collapse -->
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <div class="accordion-button collapsed d-flex justify-content-end"
+                                                    type="button" data-bs-toggle="collapse" data-bs-target="#post1"
+                                                    aria-expanded="true" aria-controls="post1">
+                                                    <p class="m-0">2 comments</p>
+                                                </div>
+                                            </h2>
+                                            <!-- comment and likes bar -->
+                                            <div class="d-flex justify-content-around">
+                                                <!-- Like -->
+                                                <!-- Like -->
+                                                <div class="d-flex align-items-center justify-content-center rounded text-muted p-1"
+                                                    type="button">
+                                                    <i class="fas fa-thumbs-up me-3"></i>
+                                                    <p class="m-0">Like</p>
+                                                </div>
+
+                                                <!-- View Album -->
+
+                                                <div class="d-flex align-items-center justify-content-center rounded text-muted p-1"
+                                                    type="button">
+                                                    <i class="fa-solid fa-images me-3"></i>
+                                                    <p class="m-0">View Album</p>
+                                                </div>
+
+                                                <!-- Comment -->
+                                                <div class="d-flex align-items-center justify-content-center rounded text-muted p-1"
+                                                    type="button" data-bs-toggle="collapse" data-bs-target="#post1"
+                                                    aria-expanded="true" aria-controls="post1">
+                                                    <i class="fas fa-comment-alt me-3"></i>
+                                                    <p class="m-0">Comment</p>
+                                                </div>
+                                            </div>
+                                            <!-- comment expand -->
+                                            <div id="post1" class="accordion-collapse collapse"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <!-- comment 1 -->
+                                                    <div class="d-flex align-items-center my-1">
+                                                        <!-- Avatar -->
+                                                        <img src="./styles/images/profile_photo.jpg" alt="avatar"
+                                                            class="avatar rounded-circle me-2">
+                                                        <!-- comment text -->
+                                                        <div class="p-3 rounded w-100 comment__input">
+                                                            <!-- menu -->
+                                                            <div class="d-flex justify-content-end">
+                                                                <i class="fas fa-ellipsis-h" type="button"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                                <!-- Edit comment menu -->
+                                                                <ul class="dropdown-menu border-0 shadow"
+                                                                    aria-labelledby="post1Menu">
+                                                                    <li class="d-flex align-items-center">
+                                                                        <a href=""
+                                                                            class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                                            Edit comment
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="d-flex align-items-center">
+                                                                        <a href=""
+                                                                            class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                                            Delete comment
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <!-- text -->
+                                                            <p class="fw-bold m-0">John</p>
+                                                            <p class="m-0 fs-7 p-2 rounded bg-gray">Lorem ipsum dolor
+                                                                sit
+                                                                amet consectetur, adipisicing elit.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- comment 2 -->
+                                                    <div class="d-flex align-items-center my-1">
+                                                        <!-- Avatar -->
+                                                        <img src="./styles/images/profile_photo.jpg" alt="avatar"
+                                                            class="avatar rounded-circle me-2">
+                                                        <!-- comment text -->
+                                                        <div class="p-3 rounded w-100 comment__input">
+                                                            <!-- menu -->
+                                                            <div class="d-flex justify-content-end">
+                                                                <i class="fas fa-ellipsis-h" type="button"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                                <!-- Edit comment menu -->
+                                                                <ul class="dropdown-menu border-0 shadow"
+                                                                    aria-labelledby="post1Menu">
+                                                                    <li class="d-flex align-items-center">
+                                                                        <a href=""
+                                                                            class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                                            Edit comment
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="d-flex align-items-center">
+                                                                        <a href=""
+                                                                            class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                                            Delete comment
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <!-- text -->
+                                                            <p class="fw-bold m-0">John</p>
+                                                            <p class="m-0 fs-7 p-2 rounded bg-gray">Lorem ipsum dolor
+                                                                sit
+                                                                amet consectetur, adipisicing elit.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- create comment -->
+                                                    <form action="" class="d-flex my-1">
+                                                        <!-- avatar -->
+                                                        <div>
+                                                            <img src="./styles/images/profile_photo.jpg" alt="avatar"
+                                                                class="avatar rounded-circle me-2">
+                                                        </div>
+                                                        <!-- input -->
+                                                        <input type="text"
+                                                            class="form-control border-0 rounded-pill post-input bg-gray"
+                                                            placeholder="Write a comment" />
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End comments -->
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- p2 -->
+                        <div class="bg-white p-4 mt-3">
+                            <!-- Author -->
+                            <div class="d-flex justify-content-between">
+                                <!-- avatar -->
+                                <div class="d-flex">
+                                    <img src="./styles/images/profile_photo.jpg" alt=""
+                                        class="avatar rounded-circle me-2">
+                                    <div>
+                                        <p class="m-0 fw-bold">Marina Nenova</p>
+                                        <span class="text-muted fs-7">July 12 at 2:45pm</span>
+                                    </div>
+                                </div>
+                                <!-- Edit -->
+                                <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" id="post1Menu"></i>
+                                <!-- edit menu -->
+                                <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1Menu">
+                                    <li class="d-flex align-items-center">
+                                        <a href=""
+                                            class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                            Edit Post
+                                        </a>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <a href=""
+                                            class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                            Delete Post
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- Post content -->
+                            <div class="mt-3">
+                                <!-- content -->
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae quasi
+                                        inventore?</p>
+                                    <img src="./styles/images/fortress-day.jpg" alt="post-image" class="img-fluid">
+                                </div>
+                                <!-- likes and comments -->
+                                <div class="position-relative mt-3 post__comment">
+                                    <!-- likes -->
+                                    <div class="d-flex align-items-center position-absolute top-0 start-0"
+                                        style="height:50px; z-index:5">
+                                        <div class="me-2">
+                                            <i class="fas fa-thumbs-up fs-4 text-primary"></i>
+                                        </div>
+                                        <p class="m-0 text-muted fs-7">Ivalina, Ivan and 5 others</p>
+                                    </div>
+
+                                    <!-- Comments start -->
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item border-0">
+                                            <!-- comment collapse -->
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <div class="accordion-button collapsed d-flex justify-content-end"
+                                                    type="button" data-bs-toggle="collapse" data-bs-target="#post2"
+                                                    aria-expanded="true" aria-controls="post2">
+                                                    <p class="m-0">2 comments</p>
+                                                </div>
+                                            </h2>
+                                            
+                                            <!-- comment and likes bar -->
+                                            <div class="d-flex justify-content-around">
+                                                <!-- Like -->
+                                                <div class="d-flex align-items-center justify-content-center rounded text-muted p-1"
+                                                    type="button">
+                                                    <i class="fas fa-thumbs-up me-3"></i>
+                                                    <p class="m-0">Like</p>
+                                                </div>
+
+                                                <!-- View Album -->
+
+                                                <div class="d-flex align-items-center justify-content-center rounded text-muted p-1"
+                                                    type="button">
+                                                    <i class="fa-solid fa-images me-3"></i>
+                                                    <p class="m-0">View Album</p>
+                                                </div>
+
+                                                <!-- Comment -->
+                                                <div class="d-flex align-items-center justify-content-center rounded text-muted p-1"
+                                                    type="button" data-bs-toggle="collapse" data-bs-target="#post1"
+                                                    aria-expanded="true" aria-controls="post1">
+                                                    <i class="fas fa-comment-alt me-3"></i>
+                                                    <p class="m-0">Comment</p>
+                                                </div>
+                                                
+                                            </div>
+                                            <!-- comment expand -->
+                                            <div id="post2" class="accordion-collapse collapse"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <!-- comment 1 -->
+                                                    <div class="d-flex align-items-center my-1">
+                                                        <!-- Avatar -->
+                                                        <img src="./styles/images/profile_photo.jpg" alt="avatar"
+                                                            class="avatar rounded-circle me-2">
+                                                        <!-- comment text -->
+                                                        <div class="p-3 rounded w-100 comment__input">
+                                                            <!-- menu -->
+                                                            <div class="d-flex justify-content-end">
+                                                                <i class="fas fa-ellipsis-h" type="button"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                                <!-- Edit comment menu -->
+                                                                <ul class="dropdown-menu border-0 shadow"
+                                                                    aria-labelledby="post1Menu">
+                                                                    <li class="d-flex align-items-center">
+                                                                        <a href=""
+                                                                            class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                                            Edit comment
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="d-flex align-items-center">
+                                                                        <a href=""
+                                                                            class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                                            Delete comment
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <!-- text -->
+                                                            <p class="fw-bold m-0">Marina</p>
+                                                            <p class="m-0 fs-7 p-2 rounded bg-gray">Lorem ipsum dolor
+                                                                sit
+                                                                amet consectetur, adipisicing elit.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- comment 2 -->
+                                                    <div class="d-flex align-items-center my-1">
+                                                        <!-- Avatar -->
+                                                        <img src="./styles/images/profile_photo.jpg" alt="avatar"
+                                                            class="avatar rounded-circle me-2">
+                                                        <!-- comment text -->
+                                                        <div class="p-3 rounded w-100 comment__input">
+                                                            <!-- menu -->
+                                                            <div class="d-flex justify-content-end">
+                                                                <i class="fas fa-ellipsis-h" type="button"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                                <!-- Edit comment menu -->
+                                                                <ul class="dropdown-menu border-0 shadow"
+                                                                    aria-labelledby="post1Menu">
+                                                                    <li class="d-flex align-items-center">
+                                                                        <a href=""
+                                                                            class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                                            Edit comment
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="d-flex align-items-center">
+                                                                        <a href=""
+                                                                            class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                                            Delete comment
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <!-- text -->
+                                                            <p class="fw-bold m-0">John</p>
+                                                            <p class="m-0 fs-7 p-2 rounded bg-gray">Lorem ipsum dolor
+                                                                sit
+                                                                amet consectetur, adipisicing elit.</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- create comment -->
+                                                    <form action="" class="d-flex my-1">
+                                                        <!-- avatar -->
+                                                        <div>
+                                                            <img src="./styles/images/profile_photo.jpg" alt="avatar"
+                                                                class="avatar rounded-circle me-2">
+                                                        </div>
+                                                        <!-- input -->
+                                                        <input type="text"
+                                                            class="form-control border-0 rounded-pill post-input bg-gray"
+                                                            placeholder="Write a comment" />
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End comments -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Posts -->
+                    </div>
+                </div>
+            </div>
+            <!-- End posts -->
+        </div>
+
+
+    </div>
+</section>
+    <!-- =============================== End Main Content =============================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
