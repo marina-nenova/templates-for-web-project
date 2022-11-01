@@ -7,6 +7,7 @@
   .fs-7 {
     font-size: 0.8rem;
   }
+/* ============= Navbar ============= */
 
 .feed-navbar {
     min-height: 56px;
@@ -86,7 +87,11 @@
     color: #3a9b8b !important;
 }
 
-/* Sidebar */
+/* ============= END Navbar ============= */
+
+
+
+/* ============= Side Bar ============= */
 
 .side-bar {
     max-width: 360px;
@@ -120,23 +125,15 @@ hr {
     color: rgb(196, 62, 62);
 }
 
+/* ============= END Side Bar ============= */
 
-/* Feed */
+/* ============= POSTS ============= */
 
 .main-feed {
     padding-top: 56px;
     max-width: 680px;
     width: 100%;
 }
-
-.post-input {
-    background-color: #dde0e4;
-}
-
-.post-type-select {
-    background-color: #dde0e4;
-}
-
 
 /* Comment */
 
@@ -155,10 +152,14 @@ hr {
     box-shadow: none !important;
 }
 
+/* ============= END POSTS ============= */
 
-/* Profile page */
+
+/* ============= Profile Page ============= */
 
 .profile-photo {
     width: 168px;
     height: 168px;
 }
+
+/* ============= END Profile Page ============= */

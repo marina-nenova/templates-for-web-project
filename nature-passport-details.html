@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/cc87dce3b6.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Explore-BG</title>
+</head>
+
+<body class="bg-gray">
+    <!-- =============================== Nav Bar =============================== -->
+    <section id="nav-bar">
+        <div class="bg-white d-flex align-items-center fixed-top shadow feed-navbar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <!-- Search -->
+                    <div class="col d-flex align-items-center">
+                        <!-- Logo -->
+                        <a href="./feed.html">
+                            <img class="logo" src="./styles/images/favicon.ico" alt="logo">
+                        </a>
+                        <!-- End Logo -->
+
+                        <!-- Search Bar -->
+                        <div class="input-group search-bar">
+                            <span class="input-group-prepend d-md-block" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <form class="d-flex" role="search" class="search-bar">
+                                    <input class="form-control me-2 rounded-pill search-input bg-gray border-0"
+                                        type="search" placeholder="Search" aria-label="Search">
+                                </form>
+                            </span>
+                        </div>
+                        <!-- End Search Bar -->
+
+
+                    </div>
+                    <!-- Nav -->
+                    <div class="col d-none d-md-flex justify-content-center">
+
+                        <!-- Home -->
+                        <div class="mx-4 nav__btn nav__btn-active">
+                            <button class="btn px-4 nav_button">
+                                <i class="fa-solid fa-house-user fs-4 text-muted"></i>
+                            </button>
+                        </div>
+                        <!-- My Passports -->
+                        <div class="mx-4 nav__btn">
+                            <button class="btn px-4 nav_button">
+                                <i class="fa-solid fa-passport fs-4 text-muted"></i>
+                            </button>
+                        </div>
+                        <!-- Want to visit -->
+                        <div class="mx-4 nav__btn">
+                            <button class="btn px-4 nav_button">
+                                <i class="fa-solid fa-heart fs-4 text-muted"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <!-- End nav -->
+
+                    <!-- Menus -->
+                    <div class="col d-flex align-items-center justify-content-end">
+                        <!-- Avatar -->
+                        <div class="d-none d-xl-flex align-items-center justify-content-center">
+                            <a href="./profile-details.html"
+                                class="text-decoration-none text-dark d-flex align-items-center justify-content-left"><img
+                                    src="./styles/images/profile_photo.jpg" alt="avatar"
+                                    class="avatar rounded-circle me-2">
+                                <p class="username m-0">Username</p>
+                            </a>
+                        </div>
+                        <!-- Dopdown menu -->
+                        <div class="d-flex align-items-center justify-content-center p-1 mx-2 rounded-circle nav-menu bg-gray"
+                            type="button" id="mainMenu" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis fs-4"></i>
+                        </div>
+                        <!-- Main menu dropdown -->
+                        <ul class="dropdown-menu border-0 shadow p-3 overflow-auto dd-menu" aria-labelledby="mainMenu"
+                            style="width: 23em; max-height: 600px">
+                            <div>
+                                <!-- Profile -->
+                                <li class="p-1 mx-2">
+                                    <h2>Menu</h2>
+                                </li>
+                                <hr>
+                                <!-- Go to -->
+                                <h4 class="m-2 dd-header">Go to</h4>
+                                <li class="my-2 p-1">
+                                    <a href=""
+                                        class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                        <div class="p-2">
+                                            <i class="fa-solid fa-house-user fs-4 text-muted"></i>
+                                        </div>
+                                        <div>
+                                            <p class="m-0 text-muted"> Home</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="my-2 p-1">
+                                    <a href=""
+                                        class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                        <div class="p-2">
+                                            <i class="fa-solid fa-passport fs-4 text-muted"></i>
+                                        </div>
+                                        <div>
+                                            <p class="m-0 text-muted">My Passports</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="my-2 p-1">
+                                    <a href=""
+                                        class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                        <div class="p-2">
+                                            <i class="fa-solid fa-heart fs-4 text-muted"></i>
+                                        </div>
+                                        <div>
+                                            <p class="m-0 text-muted">Want to visit</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="my-2 p-1">
+                                    <a href=""
+                                        class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                        <div class="p-2">
+                                            <i class="fa-solid fa-star fs-4 text-muted"></i>
+                                        </div>
+                                        <div>
+                                            <p class="m-0 text-muted">Top 10</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- End Go to -->
+                                <hr>
+
+                                <!-- Profile -->
+                                <h4 class="m-2 dd-header">Profile</h4>
+                                <li class="my-2 p-1">
+                                    <a href=""
+                                        class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                        <div class="p-2">
+                                            <i class="fa-solid fa-user fs-4 text-muted"></i>
+                                        </div>
+                                        <div>
+                                            <p class="m-0 text-muted"> View</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="my-2 p-1">
+                                    <a href=""
+                                        class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                        <div class="p-2">
+                                            <i class="fa-solid fa-pen-to-square fs-4 text-muted"></i>
+                                        </div>
+                                        <div>
+                                            <p class="m-0 text-muted">Edit</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="my-2 p-1">
+                                    <a href=""
+                                        class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                        <div class="p-2">
+                                            <i class="fa-solid fa-right-from-bracket fs-4 text-muted"></i>
+                                        </div>
+                                        <div>
+                                            <p class="m-0 text-muted">Logout</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- End Profile -->
+
+                            </div>
+                        </ul>
+
+                    </div>
+                    <!-- End Menus -->
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- =============================== End Nav Bar =============================== -->
+
+    <!-- =============================== Main Content =============================== -->
+    <section id="passports">
+        <div class="container-fluid" style="margin-top: 70px;">
+            <div class="row justify-content-center align-items-center">
+                <!-- User Info Card -->
+                <div class="col-lg-8">
+                    <div class="card mb-3 border-0 shadow">
+                        <div class="row">
+                            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                                <img src="./styles/images/profile_photo.jpg" class="rounded-circle profile-photo"
+                                    alt="profile-picture">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h1 class="card-title text-md-center">Marina Nenova</h1>
+                                        <!-- Edit profile button -->
+                                        <a href="">
+                                            <i class="fa-solid fa-pen-to-square fs-2 text-muted"></i>
+                                        </a>
+                                    </div>
+
+                                    <p class="card-text">
+                                        <i class="fa-solid fa-location-dot text-muted"></i>
+                                        15 Visited Locations
+                                    </p>
+                                    <button type="button" class="btn btn-outline-primary btn-lg">
+                                        Add location
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary btn-lg">
+                                        View Albums
+                                    </button>
+
+                                </div>
+                                <hr calss="my-2">
+                            </div>
+
+
+                            <div class="col mt-2">
+                                <ul class="nav nav-pills">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Posts</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Albums</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Visited Locations</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                            role="button" aria-expanded="false">Passports</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Museums</a></li>
+                                            <li><a class="dropdown-item active" href="#">Nature</a></li>
+                                            <li><a class="dropdown-item" href="#">Historical</a></li>
+                                            <li><a class="dropdown-item" href="#">Churches</a></li>
+                                            <li><a class="dropdown-item" href="#">All Locations</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End User info -->
+
+                <!-- Passports -->
+                <div class="col-lg-8">
+                    <div class="card my-3 border-0 shadow">
+                        <div class="card-header bg-transparent justify-content-between">
+                            <!-- Passport name -->
+                            <div class="input-group search-bar">
+                                <span class="input-group">
+                                    <form class="d-flex" role="search" class="search-bar">
+                                        <input class="form-control me-2 rounded-pill search-input bg-gray border-0"
+                                            type="search" placeholder="Search" aria-label="Search">
+                                    </form>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <div>
+                                        <h2 class="">Nature Locations</h2>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <div>
+                                        <h5 class="text-muted">Visited 5/50</h2>
+                                    </div>
+                                </div>
+                                <!-- Locations -->
+                                <!-- L1 -->
+                                <div class="col-lg-4 col-md-6 mt-4">
+                                    <div class="card h-100">
+                                        <div class="card-header bg-transparent">
+                                            <h5 type="button" class="text-center" data-bs-toggle="modal"
+                                                data-bs-target="#locationInfo">The seven Rila Lakes</h5>
+                                        </div>
+                                        <img src="./styles/images/seven-rila-lakes.jpg" class="img-fluid" alt="lakes">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Region: Kiustendil</h5>
+                                            <p class="card-text">The Seven Rila Lakes (Bulgarian: Седемте рилски езера) are a group of glacial lakes, situated in
+                                                the northwestern Rila Mountain in Bulgaria.</p>
+                                            <!-- IF MARKED AS VISITED -->
+                                            <!-- <button class="btn btn-primary w-100" type="button">Create album</button> -->
+                                            <!-- IF ALBUM CREATED -->
+                                            <!-- <button class="btn btn-primary w-100" type="button">View Album</button> -->
+                                        </div>
+                                        <div class="card-footer">
+                                            <div
+                                                class="d-flex align-items-center justify-content-between rounded text-muted p-1">
+                                                <a href="#" class="tt" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Mark as visited">
+                                                    <i class="fa-solid fa-check bg-gray rounded-circle fs-5 text-muted"></i>
+                                                </a>
+                                                <a href="#" class="tt" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Want to visit">
+                                                    <i class="fa-solid fa-plus bg-gray rounded-circle fs-5 text-muted"></i>
+                                                </a>
+                                                <a href="#" class="tt" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Add to favourites">
+                                                    <i class="fa-solid fa-heart bg-gray rounded-circle fs-5 text-muted"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- L2 -->
+                                <div class="col-lg-4 col-md-6 mt-4">
+                                    <div class="card h-100">
+                                        <div class="card-header bg-transparent">
+                                            <h4 class="text-center align-items-center">Belogradchik Fortress</h4>
+                                        </div>
+                                        <img src="./styles/images/belogradchik.png" class="img-fluid"
+                                            alt="belogradchik">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Vidin</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary">Mark as visited</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- L3 -->
+                                <div class="col-lg-4 col-md-6 mt-4">
+                                    <div class="card h-100">
+                                        <div class="card-header bg-transparent">
+                                            <h4 class="text-center align-items-center">Musala Peak</h4>
+                                        </div>
+                                        <img src="./styles/images/musala.jpeg" class="img-fluid" alt="musala">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sofia</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary">Mark as visited</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- L4 -->
+                                <div class="col-lg-4 col-md-6 mt-4">
+                                    <div class="card h-100">
+                                        <div class="card-header bg-transparent">
+                                            <h4 class="text-center align-items-center">Heavenly waterfall</h4>
+                                        </div>
+                                        <img src="./styles/images/raiskoto-praskalo.jpg" class="img-fluid"
+                                            alt="waterfall">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Plovdiv</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary">Mark as Visited</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- L5 -->
+                                <div class="col-lg-4 col-md-6 mt-4">
+                                    <div class="card h-100">
+                                        <div class="card-header bg-transparent">
+                                            <h4 class="text-center align-items-center">Cape Kaliakra</h4>
+                                        </div>
+                                        <img src="./styles/images/1200px-Nos_Kaliakra.jpg" alt="Kaliakra">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Dobrich</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary">Mark as Visited</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- L6 -->
+                                <div class="col-lg-4 col-md-6 mt-4">
+                                    <div class="card h-100">
+                                        <div class="card-header bg-transparent">
+                                            <h4 class="text-center align-items-center">Arda</h4>
+                                        </div>
+                                        <img src="./styles/images/arda.jpg" alt="arda">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Kardjali</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#" class="btn btn-primary">Mark as visited</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="locationInfo" tabindex="-1" aria-labelledby="locationInfo" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">The Seven Rila Lakes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./styles/images/seven-rila-lakes.jpg" alt="" class="img-fluid">
+
+                    <p class="mt-3">
+                        The Seven Rila Lakes (Bulgarian: Седемте рилски езера) are a group of glacial lakes, situated in
+                        the northwestern Rila Mountain in Bulgaria. They are the most visited group of lakes in
+                        Bulgaria. The lakes are situated between 2,100 and 2,500 metres elevation above sea level.
+                    </p>
+                    <p>
+                        Each lake carries a name associated with its most characteristic feature. The highest one is
+                        called Salzata ("The Tear") due to its clear waters that allow visibility in depth. The next one
+                        in height carries the name Okoto ("The Eye") after its almost perfectly oval form. Okoto is the
+                        deepest cirque lake in Bulgaria, with a depth of 37.5 m. Babreka ("The Kidney") is the lake with
+                        the steepest shores of the entire group. Bliznaka ("The Twin") is the largest one by area.
+                        Trilistnika ("The Trefoil") has an irregular shape and low shores. The shallowest lake is
+                        Ribnoto Ezero ("The Fish Lake") and the lowest one is Dolnoto Ezero ("The Lower Lake"), where
+                        the waters that flow out of the other lakes are gathered to form the Dzherman River.
+                    </p>
+                    <p>
+                        The Seven Lakes are a tourist attraction in Bulgaria because of its natural environment. The
+                        lakes are located one above the other and are connected by small streams, which form tiny
+                        waterfalls and cascades. Tourist accommodation in the lakes' vicinity include a chalet on the
+                        northeastern shore of The Fish Lake, at an elevation of 2,196 m.[citation needed] The most
+                        common time to visit the lakes is summer, in July and August, when temperature is above 10
+                        degrees Celsius and the risk of sudden storms is lower. During the rest of the year the weather
+                        can be severe. The lakes usually freeze during October, and do not melt before June. The ice
+                        cover can reach up to 2 meters.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Mark as Visited</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============================== End Main Content =============================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+        })
+    </script>
+</body>
+
+</html>
