@@ -202,10 +202,12 @@
     <!-- =============================== End Nav Bar =============================== -->
 
     <!-- =============================== Main Content =============================== -->
+
+
     <section id="passports">
         <div class="container-fluid" style="margin-top: 70px;">
             <div class="row justify-content-center align-items-center">
-                <!-- User Info Card -->
+                <!-- =============================== User Info Card =============================== -->
                 <div class="col-lg-8">
                     <div class="card mb-3 border-0 shadow">
                         <div class="row">
@@ -246,13 +248,13 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Albums</a>
+                                        <a class="nav-link active" href="#">Albums</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Visited Locations</a>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
                                             role="button" aria-expanded="false">Passports</a>
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="#">Museums</a></li>
@@ -267,13 +269,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- End User info -->
+                <!-- =============================== End User Info Card =============================== -->
 
-                <!-- Passports -->
+                <!-- =============================== Albums Info =============================== -->
                 <div class="col-lg-8">
                     <div class="card my-3 border-0 shadow">
                         <div class="card-header bg-transparent justify-content-between">
-                            <!-- Passport name -->
+                            <!-- Search bar -->
                             <div class="input-group search-bar">
                                 <span class="input-group">
                                     <form class="d-flex" role="search" class="search-bar">
@@ -282,137 +284,247 @@
                                     </form>
                                 </span>
                             </div>
+                            <!-- End Search bar -->
                         </div>
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-12 text-center">
-                                    <div>
-                                        <h2 class="">Nature Locations</h2>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <div>
-                                        <h5 class="text-muted">Visited 5/50</h2>
-                                    </div>
-                                </div>
                                 <!-- Locations -->
-                                <!-- L1 -->
-                                <div class="col-lg-4 col-md-6 mt-4">
-                                    <div class="card h-100">
-                                        <div class="card-header bg-transparent">
-                                            <h5 type="button" class="text-center" data-bs-toggle="modal"
-                                                data-bs-target="#locationInfo">The seven Rila Lakes</h5>
+                                <!-- A1 -->
+                                <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
+                                    <div class="card border-0 h-100">
+                                        <img src="./styles/images/belogradchik.png" class="card-img h-100" alt="...">
+                                        <!-- IF USER IS PROFILE USER -->
+                                        <div class="card-img-overlay text-dark">
+                                            <i class="fas fa-ellipsis-h rounded-circle bg-gray p-1 fs-5" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false" id="albumMenu"></i>
+                                            <!-- edit menu -->
+                                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="albumMenu">
+                                                <li class="d-flex align-items-center">
+                                                    <a href=""
+                                                        class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                        View Album
+                                                    </a>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <a href=""
+                                                        class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                        Edit Album
+                                                    </a>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <a href=""
+                                                        class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                        Delete Album
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <img src="./styles/images/seven-rila-lakes.jpg" class="card-img h-100" alt="lakes">
+                                        <!-- END IF -->
                                         <div class="card-body">
-                                            <h5 class="card-title">Region: Kiustendil</h5>
-                                            <p class="card-text">The Seven Rila Lakes (Bulgarian: Седемте рилски езера) are a group of glacial lakes, situated in
-                                                the northwestern Rila Mountain in Bulgaria.</p>
-                                            <!-- IF MARKED AS VISITED -->
-                                            <!-- <button class="btn btn-primary w-100" type="button">Create album</button> -->
-                                            <!-- IF ALBUM CREATED -->
-                                            <!-- <button class="btn btn-primary w-100" type="button">View Album</button> -->
-                                        </div>
-                                        <div class="card-footer">
-                                            <div
-                                                class="d-flex align-items-center justify-content-between rounded text-muted p-1">
-                                                <a href="#" class="tt" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Mark as visited">
-                                                    <i class="fa-solid fa-check bg-gray rounded-circle fs-5 text-muted"></i>
-                                                </a>
-                                                <a href="#" class="tt" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Want to visit">
-                                                    <i class="fa-solid fa-plus bg-gray rounded-circle fs-5 text-muted"></i>
-                                                </a>
-                                                <a href="#" class="tt" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Add to favourites">
-                                                    <i class="fa-solid fa-heart bg-gray rounded-circle fs-5 text-muted"></i>
-                                                </a>
-                                            </div>
+                                            <a href="" class="text-decoration-none text-dark">
+                                                <p class="card-text mb-0">Belogradchik Fortress</p>
+                                                <small>25 elements</small>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- L2 -->
-                                <div class="col-lg-4 col-md-6 mt-4">
-                                    <div class="card h-100">
-                                        <div class="card-header bg-transparent">
-                                            <h4 class="text-center align-items-center">Belogradchik Fortress</h4>
+                                <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
+                                    <div class="card border-0 h-100">
+                                        <img src="./styles/images/fortress-day.jpg" class="card-img-top h-100"
+                                            alt="...">
+                                        <!-- IF USER IS PROFILE USER -->
+                                        <div class="card-img-overlay text-dark">
+                                            <i class="fas fa-ellipsis-h rounded-circle bg-gray p-1 fs-5" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false" id="albumMenu"></i>
+                                            <!-- edit menu -->
+                                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="albumMenu">
+                                                <li class="d-flex align-items-center">
+                                                    <a href=""
+                                                        class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                        View Album
+                                                    </a>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <a href=""
+                                                        class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                        Edit Album
+                                                    </a>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <a href=""
+                                                        class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                        Delete Album
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <img src="./styles/images/belogradchik.png" class="card-img h-100"
-                                            alt="belogradchik">
+                                        <!-- END IF -->
+
                                         <div class="card-body">
-                                            <h5 class="card-title">Vidin</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card's content.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <a href="#" class="btn btn-primary">Mark as visited</a>
+                                            <a href="" class="text-decoration-none text-dark">
+                                                <p class="card-text mb-0">Tsarevets</p>
+                                                <small>25 elements</small>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- L3 -->
-                                <div class="col-lg-4 col-md-6 mt-4">
-                                    <div class="card h-100">
-                                        <div class="card-header bg-transparent">
-                                            <h4 class="text-center align-items-center">Musala Peak</h4>
+                                <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
+                                    <div class="card border-0 h-100">
+                                        <img src="./styles/images/black-sea.jpg" class="card-img-top h-100" alt="...">
+                                        <!-- IF USER IS PROFILE USER -->
+                                        <div class="card-img-overlay text-dark">
+                                            <i class="fas fa-ellipsis-h rounded-circle bg-gray p-1 fs-5" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false" id="albumMenu"></i>
+                                            <!-- edit menu -->
+                                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="albumMenu">
+                                                <li class="d-flex align-items-center">
+                                                    <a href=""
+                                                        class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                        View Album
+                                                    </a>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <a href=""
+                                                        class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                        Edit Album
+                                                    </a>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <a href=""
+                                                        class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                        Delete Album
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <img src="./styles/images/musala.jpeg" class="card-img h-100" alt="musala">
+                                        <!-- END IF -->
                                         <div class="card-body">
-                                            <h5 class="card-title">Sofia</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card's content.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <a href="#" class="btn btn-primary">Mark as visited</a>
+                                            <a href="" class="text-decoration-none text-dark">
+                                            <p class="card-text mb-0">Black sea</p>
+                                            <small>25 elements</small>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- L4 -->
-                                <div class="col-lg-4 col-md-6 mt-4">
-                                    <div class="card h-100">
-                                        <div class="card-header bg-transparent">
-                                            <h4 class="text-center align-items-center">Heavenly waterfall</h4>
+                                <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
+                                    <div class="card border-0 h-100">
+                                        <img src="./styles/images/seven-rila-lakes.jpg" class="card-img-top h-100"
+                                            alt="...">
+                                            <!-- IF USER IS PROFILE USER -->
+                                        <div class="card-img-overlay text-dark">
+                                            <i class="fas fa-ellipsis-h rounded-circle bg-gray p-1 fs-5" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false" id="albumMenu"></i>
+                                            <!-- edit menu -->
+                                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="albumMenu">
+                                                <li class="d-flex align-items-center">
+                                                    <a href=""
+                                                        class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                        View Album
+                                                    </a>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <a href=""
+                                                        class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                        Edit Album
+                                                    </a>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <a href=""
+                                                        class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                        Delete Album
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <img src="./styles/images/raiskoto-praskalo.jpg" class="card-img h-100"
-                                            alt="waterfall">
+                                        <!-- END IF -->
                                         <div class="card-body">
-                                            <h5 class="card-title">Plovdiv</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card's content.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <a href="#" class="btn btn-primary">Mark as Visited</a>
+                                            <a href="" class="text-decoration-none text-dark">
+                                            <p class="card-text mb-0">The seven Rila Lakes</p>
+                                            <small>25 elements</small>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- L5 -->
-                                <div class="col-lg-4 col-md-6 mt-4">
-                                    <div class="card h-100">
-                                        <div class="card-header bg-transparent">
-                                            <h4 class="text-center align-items-center">Cape Kaliakra</h4>
+                                <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
+                                    <div class="card border-0 h-100">
+                                        <img src="./styles/images/1200px-Nos_Kaliakra.jpg" class="card-img-top h-100"
+                                            alt="...">
+                                                 <!-- IF USER IS PROFILE USER -->
+                                        <div class="card-img-overlay text-dark">
+                                            <i class="fas fa-ellipsis-h rounded-circle bg-gray p-1 fs-5" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false" id="albumMenu"></i>
+                                            <!-- edit menu -->
+                                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="albumMenu">
+                                                <li class="d-flex align-items-center">
+                                                    <a href=""
+                                                        class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                        View Album
+                                                    </a>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <a href=""
+                                                        class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                        Edit Album
+                                                    </a>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <a href=""
+                                                        class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                        Delete Album
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <img src="./styles/images/1200px-Nos_Kaliakra.jpg" class="card-img h-100" alt="Kaliakra">
+                                        <!-- END IF -->
                                         <div class="card-body">
-                                            <h5 class="card-title">Dobrich</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card's content.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <a href="#" class="btn btn-primary">Mark as Visited</a>
+                                            <a href="" class="text-decoration-none text-dark">
+                                            <p class="card-text mb-0">Cape Kaliakra</p>
+                                            <small>25 elements</small>
+                                        </a>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- L6 -->
-                                <div class="col-lg-4 col-md-6 mt-4">
-                                    <div class="card h-100">
-                                        <div class="card-header bg-transparent">
-                                            <h4 class="text-center align-items-center">Arda</h4>
+                                <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
+                                    <div class="card border-0 h-100">
+                                        <img src="./styles/images/raiskoto-praskalo.jpg" class="card-img-top h-100"
+                                            alt="...">
+                                                 <!-- IF USER IS PROFILE USER -->
+                                        <div class="card-img-overlay text-dark">
+                                            <i class="fas fa-ellipsis-h rounded-circle bg-gray p-1 fs-5" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false" id="albumMenu"></i>
+                                            <!-- edit menu -->
+                                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="albumMenu">
+                                                <li class="d-flex align-items-center">
+                                                    <a href=""
+                                                        class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                        View Album
+                                                    </a>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <a href=""
+                                                        class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                        Edit Album
+                                                    </a>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <a href=""
+                                                        class="dropdown-item d-flex align-items-center justify-content-start fs-7">
+                                                        Delete Album
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <img src="./styles/images/arda.jpg" class="card-img h-100" alt="arda">
+                                        <!-- END IF -->
                                         <div class="card-body">
-                                            <h5 class="card-title">Kardjali</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card's content.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <a href="#" class="btn btn-primary">Mark as visited</a>
+                                            <a href="" class="text-decoration-none text-dark">
+                                            <p class="card-text mb-0">Raisko Praskalo</p>
+                                            <small>25 elements</small>
+                                        </a>
                                         </div>
                                     </div>
                                 </div>
@@ -420,7 +532,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- =============================== End Passports Info =============================== -->
             </div>
+        </div>
     </section>
 
     <!-- Modal -->
