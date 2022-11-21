@@ -1,12 +1,15 @@
 .bg-gray {
     background-color: #f0f2f5;
-  }
-  .fs-0 {
+}
+
+.fs-0 {
     font-size: 4rem;
-  }
-  .fs-7 {
+}
+
+.fs-7 {
     font-size: 0.8rem;
-  }
+}
+
 /* ============= Navbar ============= */
 
 .feed-navbar {
@@ -80,7 +83,7 @@
 
 .dd-menu a:hover p {
     color: #3a9b8b !important;
-    
+
 }
 
 .dd-menu a:hover i {
@@ -103,16 +106,18 @@
     padding-top: 56px;
 }
 
-#top-ten-right{
-    left: initial!important;
+#top-ten-right {
+    left: initial !important;
 }
 
 .badge {
     background-color: #25907e;
 }
+
 span {
     color: white;
 }
+
 hr {
     margin: 1px;
 }
@@ -163,3 +168,13 @@ hr {
 }
 
 /* ============= END Profile Page ============= */
+
+
+/* Location-details-page */
+
+.carousel img{
+    object-fit: cover;
+    object-position: center;
+    height: 60vh;
+    overflow: hidden;
+}
