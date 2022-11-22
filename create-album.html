@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/cc87dce3b6.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="staticfiles/styles.css">
+
+    <title>Explore-BG</title>
+</head>
+
+<body class="bg-gray position-relative">
+
+    <!-- ========================  Nav Bar  ======================== -->
+
+    <div class="bg-white d-flex align-items-center fixed-top shadow feed-navbar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Search -->
+                <div class="col d-flex align-items-center">
+                    <!-- Logo -->
+                    <a href="./feed.html">
+                        <img class="logo" src="./staticfiles/images/favicon.ico" alt="logo">
+                    </a>
+                    <!-- End Logo -->
+
+                    <!-- Search Bar -->
+                    <div class="input-group search-bar">
+                        <span class="input-group-prepend d-md-block" data-bs-toggle="dropdown" aria-expanded="false">
+                            <form class="d-flex" role="search" class="search-bar">
+                                <input class="form-control me-2 rounded-pill search-input bg-gray border-0"
+                                    type="search" placeholder="Search" aria-label="Search">
+                            </form>
+                        </span>
+                    </div>
+                    <!-- End Search Bar -->
+
+
+                </div>
+                <!-- Nav -->
+                <div class="col d-none d-md-flex justify-content-center">
+
+                    <!-- Home -->
+                    <div class="mx-4 nav__btn nav__btn-active">
+                        <button class="btn px-4 nav_button">
+                            <i class="fa-solid fa-house-user fs-4 text-muted"></i>
+                        </button>
+                    </div>
+                    <!-- My Passports -->
+                    <div class="mx-4 nav__btn">
+                        <button class="btn px-4 nav_button">
+                            <i class="fa-solid fa-passport fs-4 text-muted"></i>
+                        </button>
+                    </div>
+                    <!-- Want to visit -->
+                    <div class="mx-4 nav__btn">
+                        <button class="btn px-4 nav_button">
+                            <i class="fa-solid fa-heart fs-4 text-muted"></i>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- End nav -->
+
+                <!-- Menus -->
+                <div class="col d-flex align-items-center justify-content-end">
+                    <!-- Avatar -->
+                    <div class="d-none d-xl-flex align-items-center justify-content-center">
+                        <a href="./profile-details.html"
+                            class="text-decoration-none text-dark d-flex align-items-center justify-content-left"><img
+                                src="./staticfiles/images/profile_photo.png" alt="avatar"
+                                class="avatar rounded-circle me-2">
+                            <p class="username m-0">Username</p>
+                        </a>
+                    </div>
+                    <!-- Dopdown menu -->
+                    <div class="d-flex align-items-center justify-content-center p-1 mx-2 rounded-circle nav-menu bg-gray"
+                        type="button" id="mainMenu" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis fs-4"></i>
+                    </div>
+                    <!-- Main menu dropdown -->
+                    <ul class="dropdown-menu border-0 shadow p-3 overflow-auto dd-menu" aria-labelledby="mainMenu"
+                        style="width: 23em; max-height: 600px">
+                        <div>
+                            <!-- Profile -->
+                            <li class="p-1 mx-2">
+                                <h2>Menu</h2>
+                            </li>
+                            <hr>
+                            <!-- Go to -->
+                            <h4 class="m-2 dd-header">Go to</h4>
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-house-user fs-4 text-muted"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0 text-muted"> Home</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-passport fs-4 text-muted"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0 text-muted">My Passports</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-heart fs-4 text-muted"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0 text-muted">Want to visit</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-star fs-4 text-muted"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0 text-muted">Top 10</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- End Go to -->
+                            <hr>
+
+                            <!-- Profile -->
+                            <h4 class="m-2 dd-header">Profile</h4>
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-user fs-4 text-muted"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0 text-muted"> View</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="my-2 p-1">
+                                <a href=""
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-pen-to-square fs-4 text-muted"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0 text-muted">Edit</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="my-2 p-1">
+                                <a href="login-register.html"
+                                    class="text-decoration-none text-dark d-flex align-items-center justify-content-left">
+                                    <div class="p-2">
+                                        <i class="fa-solid fa-right-from-bracket fs-4 text-muted"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0 text-muted">Logout</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- End Profile -->
+
+                        </div>
+                    </ul>
+
+                </div>
+                <!-- End Menus -->
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ========================  End Nav Bar  ======================== -->
+
+
+    <div class='container-lg' style="margin-top: 30px;">
+        <div class="row justify-content-center align-items-center my-3 g-5">
+            <div class="col-lg-6 text-center d-lg-block" style="max-width: 50rem; width: 100%">
+                <div class="card bg-white shadow rounded border-0">
+                    <div class="card-header">
+                        <h3>Create Album</h3>
+                    </div>
+                    <div class="card-body text-center text-md-start px-4">
+                        <form action="{% url 'register user' %}" method="POST">
+                            <div class="my-2">
+                                <label for="name" class="form-label">Album Name</label>
+                                <input type="text" class="form-control" id="name" aria-describedby="name">
+
+                            </div>
+                            <div class="my-2">
+                                <label for="dateVisited" class="form-label">When did you visit the location?</label>
+                                <input type="date" class="form-control" id="date" />
+
+                            </div>
+                            <div class="my-2">
+                                <label for="albumText" class="form-label">Share your experience</label>
+                                <textarea class="form-control" id="albumText" rows="3"></textarea>
+                            </div>
+                            <div class="my-2">
+                                <label for="stay" class="form-label">Did you stay somewhere?</label>
+                                <input type="text" class="form-control" id="stay" aria-describedby="stay">
+                            </div>
+                            <div class="my-2">
+                                <label for="coverPhoto" class="form-label">Upload Cover Photo</label>
+                                <input class="form-control" type="file" id="formFile" name="cover_photo">
+                            </div>
+                            <div class="my-2">
+                                <label for="photos" class="form-label">Upload Photos</label>
+                                <input class="form-control" type="file" multiple id="formFile" name="photos">
+                            </div>
+
+                            <div class="my-2">
+                                <label for="photos" class="form-label d-block">Rate this location</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">3</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option4">
+                                    <label class="form-check-label" for="inlineRadio3">4</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option5">
+                                    <label class="form-check-label" for="inlineRadio3">5</label>
+                                  </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100 my-3">Preview album</button>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- End register form -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- End -->
+</body>
+
+</html>
